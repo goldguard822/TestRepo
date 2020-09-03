@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript"src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("div[role='banner_up']").bind("swipeleft", function(){
+          alert("000");
+        });
+        $("div[role='banner_up']").bind("swipeup", function(){
+          alert("111");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div role="banner_up" style="width:100px; height:100px; background-color:red;">123</div>
+  </body>
+</html>
