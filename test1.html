@@ -1175,7 +1175,14 @@ function commentDelete(cid){
   //광고 스와이프 UP시 노출
   $("span[role='banner_area']").swipe({
     tap:function(event, target) {
-      console.log("tap");
+      $("div[role='ad_area']").animate({
+        //opacity: 0.25,
+        //left: "+=50",
+        top: "50%"
+        //height: "toggle"
+      }, 500, function() {
+        // Animation complete.
+      });
     },
     swipeUp:function(event, distance, duration, fingerCount, fingerData, currentDirection) {
         $("div[role='ad_area']").animate({
