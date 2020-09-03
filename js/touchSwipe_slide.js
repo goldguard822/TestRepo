@@ -15,7 +15,7 @@ document.writeln('  <scri'+'pt type="text/javascript" src="//tm.interworksmedia.
 document.writeln('</div>');
 /* 실제 광고 노출 영역 E */
 
-<script>
+$(function(){
   //광고 스와이프 UP시 노출
   $("span[role='banner_area']").swipe({
     tap:function(event, target) {
@@ -47,4 +47,4 @@ document.writeln('</div>');
     threshold:1,
     allowPageScroll:"vertical"
   });
-</script>
+});
