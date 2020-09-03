@@ -1174,13 +1174,10 @@ function commentDelete(cid){
 <script>
   //광고 스와이프 UP시 노출
   $("span[role='banner_area']").swipe({
-    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      debugger;
-      if (event == "click") {
-
-      }
-      
-      if( direction == "up" ){
+    tap:function(event, target) {
+      console.log("tap");
+    },
+    swipeUp:function(event, distance, duration, fingerCount, fingerData, currentDirection) {
         $("div[role='ad_area']").animate({
           //opacity: 0.25,
           //left: "+=50",
@@ -1189,10 +1186,8 @@ function commentDelete(cid){
         }, 500, function() {
           // Animation complete.
         });
-      }
-
     },
-    //threshold:0
+    threshold:0
   });
   /*.on("touch click", function(){
     $("div[role='ad_area']").animate({
