@@ -1187,8 +1187,11 @@ function commentDelete(cid){
           // Animation complete.
         });
     },
-    threshold:0,
+    threshold:1,
     allowPageScroll:"none"
+  });
+  $("span[role='banner_area']").click(function(event) {
+    event.preventDefault();
   });
   /*.on("touch click", function(){
     $("div[role='ad_area']").animate({
