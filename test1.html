@@ -1182,7 +1182,8 @@ function commentDelete(cid){
     }, 500, function() {
       // Animation complete.
     });
-  }).swipe({
+  });
+  /*.swipe({
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
       if( direction == "up" ){
         $("div[role='ad_area']").animate({
@@ -1196,6 +1197,7 @@ function commentDelete(cid){
       }
     }
   });
+  */
   //스와이프 UP으로 노출된 광고 닫기
   $("span[role='slide_close']").on("click touch", function(){
     $("div[role='ad_area']").animate({
