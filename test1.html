@@ -1159,7 +1159,7 @@ function commentDelete(cid){
 
 <script type="text/javascript" src="./js/jquery.touchSwipe.min.js"></script>
 
-<div role="banner_wrap" style="position:fixed; left:0px; bottom:50px; width:100%; height:40px; background-color:transparent; z-index:99;">
+<div role="banner_wrap" style="position:fixed; left:0px; bottom:50px; width:100%; height:40px; background-color:transparent; z-index:99; touch-action:none;">
   <span role="banner_area" style="float:left; display:inline-block; width:100%; height:20px; background-color:cyan;">top</span>
   <span role="banner_area" style="float:left; display:inline-block; width:100%; height:20px; background: rgba(0,0,0,0.4) url('./images/up_arrow.png') no-repeat center center; background-size: 20px 20px;"></span>
 </div>
@@ -1197,9 +1197,9 @@ function commentDelete(cid){
     threshold:1,
     allowPageScroll:"vertical"
   });
-  $("div[role='banner_wrap']").click(function(event) {
-    event.preventDefault();
-  });
+  // $("div[role='banner_wrap']").click(function(event) {
+  //   event.preventDefault();
+  // });
   /*.on("touch click", function(){
     $("div[role='ad_area']").animate({
       //opacity: 0.25,
