@@ -1182,46 +1182,23 @@ function commentDelete(cid){
         }, 500);
     },
     threshold:1,
-    allowPageScroll:"vertical",
-    maxTimeThreshold : 1
+    allowPageScroll:"vertical"
   });
-  // $("div[role='banner_wrap']").click(function(event) {
-  //   event.preventDefault();
-  // });
-  /*.on("touch click", function(){
-    $("div[role='ad_area']").animate({
-      //opacity: 0.25,
-      //left: "+=50",
-      top: "50%"
-      //height: "toggle"
-    }, 500, function() {
-      // Animation complete.
-    });
-  });
-*/
+
   //스와이프 UP으로 노출된 광고 닫기
-  $("span[role='slide_close']").on("click touch", function(){
-    $("div[role='ad_area']").animate({
-      //opacity: 0.25,
-      //left: "+=50",
-      top: "100%"
-      //height: "toggle"
-    }, 500, function() {
-      // Animation complete.
-    });
-  }).swipe({
-    swipe:function(event, direction, distance, duration, figerCount, fingerData) {
-      if (direction == "down") {
-        $("div[role='ad_area']").animate({
-          //opacity: 0.25,
-          //left: "+=50",
-          top: "100%"
-          //height: "toggle"
-        }, 500, function() {
-          // Animation complete.
-        });
-      }
-    }
+  $("span[role='slide_close']").swipe({
+    tap:function(event, target) {
+      $("div[role='ad_area']").animate({
+        top: "100%"
+      }, 500);
+    },
+    swipeUp:function(event, distance, duration, figerCount, fingerData, currentDirection) {
+      $("div[role='ad_area']").animate({
+        top: "100%"
+      }, 500);
+    },
+    threshold:1,
+    allowPageScroll:"vertical"
   });
 </script>
 
