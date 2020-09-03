@@ -1188,7 +1188,8 @@ function commentDelete(cid){
 
     },
     threshold:0
-  }).on("touch click", function(){
+  });
+  /*.on("touch click", function(){
     $("div[role='ad_area']").animate({
       //opacity: 0.25,
       //left: "+=50",
@@ -1198,7 +1199,7 @@ function commentDelete(cid){
       // Animation complete.
     });
   });
-
+*/
   //스와이프 UP으로 노출된 광고 닫기
   $("span[role='slide_close']").on("click touch", function(){
     $("div[role='ad_area']").animate({
