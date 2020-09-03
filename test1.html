@@ -1163,21 +1163,27 @@ function commentDelete(cid){
   <span role="banner_area" style="float:left; display:inline-block; width:100%; height:20px; background-color:cyan;">top</span>
   <span role="banner_area" style="float:left; display:inline-block; width:100%; height:20px; background: rgba(0,0,0,0.4) url('./images/up_arrow.png') no-repeat center center; background-size: 20px 20px;"></span>
 </div>
-<div role="ad_area" style="position: fixed; top: 100%; right: 0; left: 0; bottom: 90px; background-color:red;">
+
+<div role="ad_area" style="position: fixed; top: 100%; right: 0; left: 0; bottom: 90px; background-color:rgba(0,0,0,0.3);">
+  <span role="slide_close" style="display:inline-block; width:100%; height:20px; background-color:bisque;"></div>
   <b style="position: absolute; top: 0px; left:0px; padding: 0 5px; background-color: #444; color: white; font-size: 1.1em;" > &times;<b style="position: absolute; top:0; left: 0; width:15px; height: 15px;" onclick="this.parentElement.parentElement.remove()"></b> </b>
   <!-- :: Ad Tag :: -->
   <script>document.write("<d"+"iv id='mobonDivBanner_381679'><iframe name='ifrad' id='mobonIframe_381679' src='//www.mediacategory.com/servlet/adbnMobileBanner?from="+escape(document.referrer)+"&s=381679&iwh=150_150&bntype=30&cntad=3&cntsr=1' frameborder='0' scrolling='no' style='height:150px; width:150px;'></iframe></div>");</script>
 </div>
 
 <script>
-/*
-  $('span[role="banner_area"]').off().on("click", function(){
-    alert("click");
-  });
-*/
-  $("span[role='banner_area']").swipe({
+  //광고 스와이프 UP시 노출
+  $("span[role='banner_area']").on("click", function(){
+    $("div[role='ad_area']").animate({
+      //opacity: 0.25,
+      //left: "+=50",
+      top: "50%"
+      //height: "toggle"
+    }, 500, function() {
+      // Animation complete.
+    });
+  }).swipe({
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-
       if( direction == "up" ){
         $("div[role='ad_area']").animate({
           //opacity: 0.25,
@@ -1187,17 +1193,33 @@ function commentDelete(cid){
         }, 500, function() {
           // Animation complete.
         });
-      }else if( direction == "right" ){
-        //오른쪽
-        threshold:0
       }
-    },
+    }
   });
-  /*
-  $('span[role="banner_area"]').bind('swipeup', function(){
-    alert("swipe");
+  //스와이프 UP으로 노출된 광고 닫기
+  $("span[role='slide_close']").on("click", function(){
+    $("div[role='ad_area']").animate({
+      //opacity: 0.25,
+      //left: "+=50",
+      top: "100%"
+      //height: "toggle"
+    }, 500, function() {
+      // Animation complete.
+    });
+  }).swipe({
+    swipe:function(event, direction, distance, duration, figerCount, fingerData) {
+      if (direction == "down") {
+        $("div[role='ad_area']").animate({
+          //opacity: 0.25,
+          //left: "+=50",
+          top: "100%"
+          //height: "toggle"
+        }, 500, function() {
+          // Animation complete.
+        });
+      }
+    }
   });
-  */
 </script>
 
 <!-- 광고 신규 작업 E -->
