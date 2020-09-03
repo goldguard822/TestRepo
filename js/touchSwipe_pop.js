@@ -19,14 +19,10 @@ $(function(){
   //광고 스와이프 UP시 노출
   $("span[role='banner_area']").swipe({
     tap:function(event, target) {
-      $("div[role='ad_area']").animate({
-        top: "50%"
-      }, 500);
+      $("div[role='ad_area']").fadeIn(500);
     },
     swipeUp:function(event, distance, duration, fingerCount, fingerData, currentDirection) {
-        $("div[role='ad_area']").animate({
-          top: "50%"
-        }, 500);
+        $("div[role='ad_area']").fadeIn(500);
     },
     threshold:1,
     allowPageScroll:"vertical"
@@ -35,14 +31,10 @@ $(function(){
   //스와이프 UP으로 노출된 광고 닫기
   $("span[role='slide_close']").swipe({
     tap:function(event, target) {
-      $("div[role='ad_area']").animate({
-        top: "100%"
-      }, 500);
+      $("div[role='ad_area']").fadeOut(500);
     },
     swipeDown:function(event, distance, duration, figerCount, fingerData, currentDirection) {
-      $("div[role='ad_area']").animate({
-        top: "100%"
-      }, 500);
+      $("div[role='ad_area']").fadeOut(500);
     },
     threshold:1,
     allowPageScroll:"vertical"
