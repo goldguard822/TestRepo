@@ -1173,7 +1173,7 @@ function commentDelete(cid){
 
 <script>
   //광고 스와이프 UP시 노출
-  $("span[role='banner_area']").on("click", function(){
+  $("span[role='banner_area']").on("click touch", function(){
     $("div[role='ad_area']").animate({
       //opacity: 0.25,
       //left: "+=50",
@@ -1197,7 +1197,7 @@ function commentDelete(cid){
     }
   });
   //스와이프 UP으로 노출된 광고 닫기
-  $("span[role='slide_close']").on("click", function(){
+  $("span[role='slide_close']").on("click touch", function(){
     $("div[role='ad_area']").animate({
       //opacity: 0.25,
       //left: "+=50",
