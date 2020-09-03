@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="text/javascript"src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="./js/jquery.touchSwipe.min.js"></script>
     <script>
       $(document).ready(function(){
+        //$(function(){
+          $("div[role='banner_up']").swipe({
+            swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+              debugger;
+              if( direction == "up" ){
+                alert('1');
+              }else if( direction == "right" ){
+                //오른쪽
+                threshold:0
+              }
+            },
+          });
+        /*
         $("div[role='banner_up']").bind("swipeleft", function(){
           alert("000");
         });
         $("div[role='banner_up']").bind("swipeup", function(){
           alert("111");
         });
+        */
       });
     </script>
   </head>
