@@ -10,7 +10,7 @@ document.writeln('</div>');
 
 /* 실제 광고 노출 영역 S */
 document.writeln('<div role="ad_area">');
-document.writeln('  <span role="slide_close"></div>');
+document.writeln('  <span role="slide_close"></span>');
 document.writeln('  <scri'+'pt type="text/javascript" src="//tm.interworksmedia.co.kr/ads.js/9D2DCDA5"></scri'+'pt>"'); // 이 부분에 광고 스크립트 들어가야 함
 document.writeln('</div>');
 /* 실제 광고 노출 영역 E */
