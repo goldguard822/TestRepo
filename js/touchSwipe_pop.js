@@ -33,9 +33,11 @@ $(function(){
     tap:function(event, target) {
       $("div[role='ad_area']").fadeOut(500);
     },
+    /*
     swipeDown:function(event, distance, duration, figerCount, fingerData, currentDirection) {
       $("div[role='ad_area']").fadeOut(500);
     },
+    */
     threshold:1,
     allowPageScroll:"vertical"
   });
