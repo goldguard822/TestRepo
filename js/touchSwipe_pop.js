@@ -10,7 +10,9 @@ document.writeln('</div>');
 /* 실제 광고 노출 영역 S */
 document.writeln('<div role="ad_area" style="position: fixed; top: 0; right: 0; left: 0; bottom:0; background-color:rgba(0,0,0,0.3); z-index:9990; touch-action:none; display:none;">');
 document.writeln('  <span role="slide_close" style="position: absolute; top: 0px; right: 0px; width: 40px; height: 40px; background: rgba(0,0,0,0.5) url(./images/btn_popClose.png) center center;"></span>');
-document.writeln('  <div><scri'+'pt type="text/javascript" src="//tm.interworksmedia.co.kr/ads.js/9D2DCDA5"></scri'+'pt>"</div>'); // 이 부분에 광고 스크립트 들어가야 함
+document.writeln('  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">');
+document.writeln('    <scri'+'pt type="text/javascript" src="//tm.interworksmedia.co.kr/ads.js/9D2DCDA5"></scri'+'pt>"'); // 이 부분에 광고 스크립트 들어가야 함
+document.writeln('  </div>');
 document.writeln('</div>');
 /* 실제 광고 노출 영역 E */
 
