@@ -3,7 +3,7 @@
 /* 광고 보기 버튼 S */
 document.writeln('<div role="banner_wrap" style="position:fixed; left:0px; bottom:50px; width:100%; height:40px; background-color:transparent; z-index:99; touch-action:none;">');
 document.writeln('  <span role="banner_area" class="banner_area_top" style="float:left; display:inline-block; width:100%; height:20px; background-color:transparnt; touch-action:none;"></span>');
-document.writeln('  <span role="banner_area" class="banner_area_bottom" style="float:left; display:inline-block; width:100%; height:20px; background: rgba(0,0,0,0.4) url(../images/up_arrow.png) no-repeat center center; background-size: 20px 20px; touch-action:none;"></span>');
+document.writeln('  <span role="banner_area" class="banner_area_bottom" style="float:left; display:inline-block; width:100%; height:20px; background: rgba(0,0,0,0.4) url(./images/btnO_arrow_up.gif) no-repeat center center; background-size: 20px 20px; touch-action:none;"></span>');
 document.writeln('</div>');
 /* 광고 보기 버튼 E */
 
