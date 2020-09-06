@@ -6,7 +6,7 @@ document.writeln('</div>');
 /* 광고 보기 버튼 E */
 
 /* 실제 광고 노출 영역 S */
-document.writeln('<div role="ad_area" style="position: fixed; top: 100%; right: 0; left: 0; bottom: 50px; background-color:rgba(0,0,0,0.4); z-index:99; touch-action:none; overflow:hidden; display:none;">');
+document.writeln('<div role="ad_area" style="position: fixed; top: 100%; right: 0; left: 0; bottom: 50px; background-color:rgba(0,0,0,0.4); z-index:99; touch-action:none; overflow:hidden;">');
 document.writeln('  <span role="slide_close" style="float:left; display:inline-block; width:100%; height:20px; background: rgba(0,0,0,0.4) url(./images/btnO_arrow_up.gif) no-repeat center center; background-size: 20px 20px;"></span>');
 document.writeln('  <span role="slide_close" style="float:left; display:inline-block; width:100%; height:20px; background-color:transparent; touch-action:none;"></span>');
 document.writeln('  <div style="position: absolute; top: calc(50% + 20px); left: 50%; transform: translate(-50%, calc(-50% + 20px));">');
@@ -1187,13 +1187,13 @@ $(function(){
     tap:function(event, target) {
       $("div[role='ad_area']").animate({
         top: "50%"
-      }, 500).fadeIn(500);
+      }, 500);
       $("div[role='banner_wrap']").fadeOut(500);
     },
     swipeUp:function(event, distance, duration, fingerCount, fingerData, currentDirection) {
       $("div[role='ad_area']").animate({
         top: "50%"
-      }, 500).fadeIn(500);
+      }, 500);
       $("div[role='banner_wrap']").fadeOut(500);
     },
     threshold:1,
@@ -1203,13 +1203,13 @@ $(function(){
   //스와이프 Down시 노출된 광고 닫기
   $("span[role='slide_close']").swipe({
     tap:function(event, target) {
-      $("div[role='ad_area']").fadeOut(500).animate({
+      $("div[role='ad_area']").animate({
         top: "100%"
       }, 500);
       $("div[role='banner_wrap']").fadeIn(500);
     },
     swipeDown:function(event, distance, duration, figerCount, fingerData, currentDirection) {
-      $("div[role='ad_area']").fadeOut(500).animate({
+      $("div[role='ad_area']").animate({
         top: "100%"
       }, 500);
       $("div[role='banner_wrap']").fadeIn(500);
