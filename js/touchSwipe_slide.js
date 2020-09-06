@@ -1185,17 +1185,15 @@ $(function(){
   //광고 스와이프 UP시 노출
   $("span[role='banner_area']").swipe({
     tap:function(event, target) {
-      $("div[role='banner_wrap']").hide(500);
-      $("div[role='ad_area']").animate({
-        top: "50%",
-        display:"block"
+      $("div[role='banner_wrap']").fadeOut(500);
+      $("div[role='ad_area']").fadeIn(500).animate({
+        top: "50%"
       }, 500);
     },
     swipeUp:function(event, distance, duration, fingerCount, fingerData, currentDirection) {
-      $("div[role='banner_wrap']").hide(500);
-      $("div[role='ad_area']").animate({
-        top: "50%",
-        display:"block"
+      $("div[role='banner_wrap']").fadeOut(500);
+      $("div[role='ad_area']").fadeIn(500).animate({
+        top: "50%"
       }, 500);
     },
     threshold:1,
@@ -1205,16 +1203,16 @@ $(function(){
   //스와이프 Down시 노출된 광고 닫기
   $("span[role='slide_close']").swipe({
     tap:function(event, target) {
-      $("div[role='ad_area']").animate({
+      $("div[role='ad_area']").fadeOut(500).animate({
         top: "100%"
-      }, 500).hide(500);
-      $("div[role='banner_wrap']").show();
+      }, 500);
+      $("div[role='banner_wrap']").fadeIn(500);
     },
     swipeDown:function(event, distance, duration, figerCount, fingerData, currentDirection) {
-      $("div[role='ad_area']").animate({
+      $("div[role='ad_area']").fadeOut(500).animate({
         top: "100%"
-      }, 500).hide(500);
-      $("div[role='banner_wrap']").show();
+      }, 500);
+      $("div[role='banner_wrap']").fadeIn(500);
     },
     threshold:1,
     allowPageScroll:"vertical"
