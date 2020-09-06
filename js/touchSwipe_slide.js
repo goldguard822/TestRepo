@@ -1188,14 +1188,14 @@ $(function(){
       $("div[role='banner_wrap']").hide(500);
       $("div[role='ad_area']").animate({
         top: "50%",
-        display:""
+        display:"block"
       }, 500);
     },
     swipeUp:function(event, distance, duration, fingerCount, fingerData, currentDirection) {
       $("div[role='banner_wrap']").hide(500);
       $("div[role='ad_area']").animate({
         top: "50%",
-        display:""
+        display:"block"
       }, 500);
     },
     threshold:1,
