@@ -1185,13 +1185,13 @@ $(function(){
   $("span[role='banner_area']").swipe({
     tap:function(event, target) {
       $("div[role='banner_wrap']").hide();
-      $("div[role='ad_area']").animate({
-        top: "50%"
+      $("div[role='ad_area']").show(500).animate({
+        top: "50%",
       }, 500);
     },
     swipeUp:function(event, distance, duration, fingerCount, fingerData, currentDirection) {
       $("div[role='banner_wrap']").hide();
-      $("div[role='ad_area']").animate({
+      $("div[role='ad_area']").show(500).animate({
         top: "50%"
       }, 500);
     },
@@ -1202,13 +1202,13 @@ $(function(){
   //스와이프 Down시 노출된 광고 닫기
   $("span[role='slide_close']").swipe({
     tap:function(event, target) {
-      $("div[role='ad_area']").animate({
+      $("div[role='ad_area']").hide(500).animate({
         top: "100%"
       }, 500);
       $("div[role='banner_wrap']").show();
     },
     swipeDown:function(event, distance, duration, figerCount, fingerData, currentDirection) {
-      $("div[role='ad_area']").animate({
+      $("div[role='ad_area']").hide(500).animate({
         top: "100%"
       }, 500);
       $("div[role='banner_wrap']").show();
