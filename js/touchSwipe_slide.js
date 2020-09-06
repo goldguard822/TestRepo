@@ -1185,15 +1185,15 @@ $(function(){
   //광고 스와이프 UP시 노출
   $("span[role='banner_area']").swipe({
     tap:function(event, target) {
-      $("div[role='ad_area']").fadeIn(500).animate({
+      $("div[role='ad_area']").animate({
         top: "50%"
-      }, 500);
+      }, 500).fadeIn(500);
       $("div[role='banner_wrap']").fadeOut(500);
     },
     swipeUp:function(event, distance, duration, fingerCount, fingerData, currentDirection) {
-      $("div[role='ad_area']").fadeIn(500).animate({
+      $("div[role='ad_area']").animate({
         top: "50%"
-      }, 500);
+      }, 500).fadeIn(500);
       $("div[role='banner_wrap']").fadeOut(500);
     },
     threshold:1,
