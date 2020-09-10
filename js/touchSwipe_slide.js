@@ -1217,4 +1217,7 @@ $(function(){
     threshold:1,
     allowPageScroll:"vertical"
   });
+
+  var _aa = $("div#div-igaw-ad-web_dhhy4kqh66dwxmf").find("iframe");
+  _aa.css({width:"100%"});
 });
