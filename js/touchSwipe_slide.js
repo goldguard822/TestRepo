@@ -15,6 +15,12 @@ document.writeln('  </div>');
 document.writeln('</div>');
 /* 실제 광고 노출 영역 E */
 
+/* 하단 광고 S */
+document.writeln('<div style="position: fixed; bottom: 0;width: 100%;">');
+document.writeln('  <scri'+'pt type="text/javascript" src="//tm.interworksmedia.co.kr/ads.js/4B006C06"></scri'+'pt>"'')
+document.writeln('</div>');
+/* 하단 광고 E */
+
 (function (factory) {
     if (typeof define === 'function' && define.amd && define.amd.jQuery) {
         // AMD. Register as anonymous module.
