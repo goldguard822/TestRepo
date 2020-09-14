@@ -1,7 +1,7 @@
 $.ajax({
   type:"GET",
-  url:"http://bmclub.synology.me/board/notice.php?filter=1&keyword=&mod=list&page=0",
-  dataType:"html",
+  url:"http://bmclub.synology.me/board/ad_test.php?filter=1&keyword=&mod=list&page=0",
+  dataType:"json",
   cache:false,
   success:function(data){
     debugger;
