@@ -4,5 +4,8 @@ $.ajax({
   cache:false,
   success:function(data){
     debugger;
+  },
+  error:function(a,b,c){
+    debugger;
   }
 });
