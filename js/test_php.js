@@ -1,6 +1,6 @@
 $.ajax({
   type:"GET",
-  url:"http://bmclub.synology.me/board/ad_test.php?filter=1&keyword=&mod=list&page=0",
+  url:"https://bmclub.synology.me/board/ad_test.php?filter=1&keyword=&mod=list&page=0",
   dataType:"json",
   cache:false,
   success:function(data){
