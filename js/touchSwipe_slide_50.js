@@ -7,8 +7,8 @@ document.writeln('</div>');
 
 /* 실제 광고 노출 영역 S */
 document.writeln('<div role="ad_area" style="position: fixed; top: 100%; right: 0; left: 0; bottom: 50px; background-color:rgba(0,0,0,0.4); z-index:99; touch-action:none; overflow:hidden;">');
-document.writeln('  <span role="slide_close" style="float:left; display:inline-block; width:100%; height:30px; background: rgba(0,0,0,0.4) url(//goldguard822.github.io/TestRepo/images/btnO_arrow_down.gif) no-repeat center center; background-size: 20px 20px;"></span>');
-document.writeln('  <span role="slide_close" style="float:left; display:inline-block; width:100%; height:20px; background-color:transparent; touch-action:none;"></span>');
+document.writeln('  <span role="slide_close" style="float:left; display:inline-block; width:100%; height:20px; background: rgba(0,0,0,0.4) url(//goldguard822.github.io/TestRepo/images/btnO_arrow_down.gif) no-repeat center center; background-size: 20px 20px;"></span>');
+document.writeln('  <span role="slide_close" style="float:left; display:inline-block; width:100%; height:30px; background-color:transparent; touch-action:none;"></span>');
 document.writeln('  <div style="position: absolute; top: calc(50% + 20px); left: 50%; transform: translate(-50%, calc(-50% + 20px));">');
 document.writeln('    <scri'+'pt type="text/javascript" src="//tm.interworksmedia.co.kr/ads.js/9D2DCDA5"></scri'+'pt>'); // 이 부분에 광고 스크립트 들어가야 함
 document.writeln('  </div>');
