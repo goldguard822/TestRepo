@@ -1,13 +1,13 @@
 /* 광고 보기 버튼 html S */
 document.writeln('<div role="banner_wrap" style="position:fixed; left:0px; bottom:50px; width:100%; height:50px; background-color:transparent; z-index:99; touch-action:none;">');
 document.writeln('  <span role="banner_area" class="banner_area_top" style="float:left; display:inline-block; width:100%; height:30px; background-color:transparnt; touch-action:none;"></span>');
-document.writeln('  <span role="banner_area" class="banner_area_bottom" style="float:left; display:inline-block; width:100%; height:20px; background: rgba(0,0,0,0.4) url(//goldguard822.github.io/TestRepo/images/btnO_arrow_up.gif) no-repeat center center; background-size: 20px 20px; touch-action:none;"></span>');
+document.writeln('  <span role="banner_area" class="banner_area_bottom" style="float:left; display:inline-block; width:100%; height:20px; background: rgba(0,0,0,0.4) url(//up.implay.co.kr/images/btnO_arrow_up.gif) no-repeat center center; background-size: 20px 20px; touch-action:none;"></span>');
 document.writeln('</div>');
 /* 광고 보기 버튼 html E */
 
 /* 스와이프 광고 노출 영역 S */
 document.writeln('<div role="ad_area" style="position: fixed; top: 0; right: 0; left: 0; bottom:0; background-color:rgba(0,0,0,0.4); z-index:9990; touch-action:none; display:none;">');
-document.writeln('  <span role="slide_close" style="position: absolute; top: 0px; right: 0px; width: 40px; height: 40px; background: rgba(0,0,0,0.5) url(//goldguard822.github.io/TestRepo/images/btn_popClose.png) center center no-repeat; background-size: 30px 30px;"></span>');
+document.writeln('  <span role="slide_close" style="position: absolute; top: 0px; right: 0px; width: 40px; height: 40px; background: rgba(0,0,0,0.5) url(//up.implay.co.kr/images/btn_popClose.png) center center no-repeat; background-size: 30px 30px;"></span>');
 document.writeln('  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">');
 document.writeln('    <scri'+'pt type="text/javascript" src="//tm.interworksmedia.co.kr/ads.js/9D2DCDA5"></scri'+'pt>'); // 이 부분에 광고 스크립트 들어가야 함 **** src에 광고 url 변경 필요 ****
 document.writeln('  </div>');
