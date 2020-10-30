@@ -1193,10 +1193,12 @@ $(function(){
     tap:function(event, target) {
       $("div[role='banner_wrap']").hide();
       $("div[role='ad_area']").fadeIn(500);
+      sendlog('pop'); //광고 노출시 로그 기록
     },
     swipeUp:function(event, distance, duration, fingerCount, fingerData, currentDirection) {
       $("div[role='banner_wrap']").hide();
       $("div[role='ad_area']").fadeIn(500);
+      sendlog('pop'); //광고 노출시 로그 기록
     },
     threshold:1,
     allowPageScroll:"vertical"
@@ -1216,6 +1218,21 @@ $(function(){
     threshold:1,
     allowPageScroll:"vertical"
   });
+
+  //최하단 광고 로그 기록
+  sendlog('basis');
+
+  //광고 로그 기록 함수
+  function sendlog(_type) {
+    // 광고 타입 (basis : 최하단광고, slide : 슬라이드 방식, pop : 전체 화면 방식)
+    var _id = "todaysgsg"; // 매체 아이디
+    $.ajax({
+      type:'GET',
+      url:'http://storelog.kode.co.kr/'+ _type +'/'+ _id +'/',
+      success:function(data,status,xhr){
+      }
+    });
+  }
 
 /*
   setTimeout(function(){
