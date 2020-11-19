@@ -9,7 +9,7 @@ document.writeln('</div>');
 document.writeln('<div role="ad_area" style="position: fixed; top: 100%; right: 0; left: 0; bottom: 50px; background-color:rgba(0,0,0,0.4); z-index:99; touch-action:none; overflow:hidden;">');
 document.writeln('  <span role="slide_close" style="float:left; display:inline-block; width:100%; height:20px; background: rgba(0,0,0,0.4) url(//up.implay.co.kr/images/btnO_arrow_down.gif) no-repeat center center; background-size: 20px 20px;"></span>');
 document.writeln('  <span role="slide_close" style="float:left; display:inline-block; width:100%; height:20px; background-color:transparent; touch-action:none;"></span>');
-document.writeln('  <div style="position: absolute; top: calc(50% + 20px); left: 15%; transform: translate(-10%, calc(-50% + 20px));">');
+document.writeln('  <div style="position: absolute; top: calc(50% + 20px); left: 15%; right:0px; transform: translate(-10%, calc(-50% + 20px)); background-color:#fff;">');
 //document.writeln('    <scri'+'pt type="text/javascript" src="//tm.interworksmedia.co.kr/ads.js/9D2DCDA5"></scri'+'pt>'); // 이 부분에 광고 스크립트 들어가야 함 **** src에 광고 url 변경 필요 ****
 document.writeln('      <iframe src="//adv.imadrep.co.kr/7826_01.html" width="100%" height="250" allowtransparency="true" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>');
 document.writeln('  </div>');
