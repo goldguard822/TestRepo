@@ -6,8 +6,8 @@ document.writeln('</div>');
 /* 광고 보기 버튼 html E */
 
 /* 스와이프 광고 노출 영역 S */
-//var _ad_url1 = "//tm.interworksmedia.co.kr/ads.js/9D2DCDA5";
-var _ad_url1 = "//adv.imadrep.co.kr/7826_01.html";
+var _ad_url1 = "//tm.interworksmedia.co.kr/ads.js/9D2DCDA5";
+//var _ad_url1 = "//adv.imadrep.co.kr/7826_01.html";
 var _ad_type1 = _ad_url1.search(".js");
 var _ad_width1 = "100%";
 var _ad_height1 = "200px";
