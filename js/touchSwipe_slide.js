@@ -37,7 +37,7 @@ setTimeout(function(){
   _ad_bottom1_script.src = _ad_url2;
   _ad_bottom1_script.type = "text/javascript";
   _ad_bottom1_area.appendChild(_ad_bottom1_script);
-},500);
+},3000);
 /* 하단 광고 E */
 
 (function (factory) {
