@@ -1217,14 +1217,14 @@ $(function(){
   $("span[role='banner_area']").swipe({
     tap:function(event, target) {
       $("div[role='ad_area']").animate({
-        top: "50%"
+        top: "40%"
       }, 500);
       $("div[role='banner_wrap']").fadeOut(500);
       sendlog('slide'); //광고 노출시 로그 기록
     },
     swipeUp:function(event, distance, duration, fingerCount, fingerData, currentDirection) {
       $("div[role='ad_area']").animate({
-        top: "50%"
+        top: "40%"
       }, 500);
       $("div[role='banner_wrap']").fadeOut(500);
       sendlog('slide'); //광고 노출시 로그 기록
