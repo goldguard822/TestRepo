@@ -18,7 +18,7 @@ document.writeln('  <span role="slide_close" style="position: absolute; top: 0px
 if (_ad_type1 < 0) { // 광고 url이 html 타입인경우
   document.writeln('  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width:'+ _ad_width1 +'; height:'+ _ad_height1 +'">');
   document.writeln('  <div style="position: absolute; top: calc(50% + 10px); left: 50%; width:95%; transform: translate(-50%, calc(-50% + 10px)); background-color:rgba(255,255,255,0);">');
-  document.writeln('    <iframe src="'+ _ad_url1 +'" style="left: 0; position: relative; top: 0; border: 0; width:'+ _ad_width1 +'; height:'+ _ad_height1 +'; touch-action:none; background-color:#fff;" allowtransparency="true" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="yes" allowfullscreen="true"></iframe>');
+  document.writeln('    <iframe src="'+ _ad_url1 +'" style="left: 0; position: relative; top: 0; border: 0; width:'+ _ad_width1 +'; height:'+ _ad_height1 +'; touch-action:none; background-color:#fff;" allowtransparency="true" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>');
 } else { // 광고 url이 js 타입인 경우
   document.writeln('  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">');
   document.writeln('  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">');
