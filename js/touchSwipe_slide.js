@@ -6,22 +6,21 @@ document.writeln('</div>');
 /* 광고 보기 버튼 html E */
 
 /* 스와이프 광고 노출 영역 S */
-var _ad_url1 = "//tm.interworksmedia.co.kr/ads.js/9D2DCDA5";
-//var _ad_url1 = "//adv.imadrep.co.kr/7826_01.html";
+var _ad_url1 = "//tm.interworksmedia.co.kr/ads.js/9D2DCDA5"; //광고 url, //adv.imadrep.co.kr/7826_01.html
 var _ad_type1 = _ad_url1.search(".js");
-var _ad_width1 = "100%";
-var _ad_height1 = "200px";
+var _ad_width1 = "100%"; //광고 너비 설정
+var _ad_height1 = "200px"; //광고 높이 설정
 
 document.writeln('<div role="ad_area" style="position: fixed; top: 100%; right: 0; left: 0; bottom: 50px; background-color:rgba(0,0,0,0.4); z-index:99; touch-action:none; overflow:hidden;">');
 document.writeln('  <span role="slide_close" style="float:left; display:inline-block; width:100%; height:20px; background: rgba(0,0,0,0.4) url(images/btnO_arrow_down.gif) no-repeat center center; background-size: 20px 20px;"></span>');
 document.writeln('  <span role="slide_close" style="float:left; display:inline-block; width:100%; height:20px; background-color:transparent; touch-action:none;"></span>');
 
-if (_ad_type1 < 0) { //html 타입인경우
+if (_ad_type1 < 0) { // 광고 url이 html 타입인경우
   document.writeln('  <div style="position: absolute; top: calc(50% + 10px); left: 50%; width:95%; transform: translate(-50%, calc(-50% + 10px)); background-color:rgba(255,255,255,0);">');
-  document.writeln('    <iframe src="'+ _ad_url1 +'" name="ad_iframe1" style="left: 0; position: relative; top: 0; border: 0; width:'+ _ad_width1 +'; height:'+ _ad_height1 +'; touch-action:none; background-color:#fff;" allowtransparency="true" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="yes" allowfullscreen="true"></iframe>');
-} else { // js 타입인 경우
+  document.writeln('    <iframe src="'+ _ad_url1 +'" style="left: 0; position: relative; top: 0; border: 0; width:'+ _ad_width1 +'; height:'+ _ad_height1 +'; touch-action:none; background-color:#fff;" allowtransparency="true" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="yes" allowfullscreen="true"></iframe>');
+} else { // 광고 url이 js 타입인 경우
   document.writeln('  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">');
-  document.writeln('    <scri'+'pt type="text/javascript" src="'+ _ad_url1 +'"></scri'+'pt>'); // 이 부분에 광고 스크립트 들어가야 함 **** src에 광고 url 변경 필요 ****
+  document.writeln('    <scri'+'pt type="text/javascript" src="'+ _ad_url1 +'"></scri'+'pt>');
 }
 document.writeln('  </div>');
 document.writeln('</div>');
