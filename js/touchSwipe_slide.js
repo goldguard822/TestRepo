@@ -9,12 +9,13 @@ document.writeln('</div>');
 //var _ad_url1 = "//tm.interworksmedia.co.kr/ads.js/9D2DCDA5";
 var _ad_url1 = "//adv.imadrep.co.kr/7826_01.html";
 var _ad_type1 = _ad_url1.search(".js");
+var _ad_height1 = "250px";
 document.writeln('<div role="ad_area" style="position: fixed; top: 100%; right: 0; left: 0; bottom: 50px; background-color:rgba(0,0,0,0.4); z-index:99; touch-action:none; overflow:hidden;">');
 document.writeln('  <span role="slide_close" style="float:left; display:inline-block; width:100%; height:20px; background: rgba(0,0,0,0.4) url(images/btnO_arrow_down.gif) no-repeat center center; background-size: 20px 20px;"></span>');
 document.writeln('  <span role="slide_close" style="float:left; display:inline-block; width:100%; height:20px; background-color:transparent; touch-action:none;"></span>');
 document.writeln('  <div style="position: absolute; top: calc(50% + 10px); left: 50%; transform: translate(-50%, calc(-50% + 10px)); background-color:rgba(255,255,255,0);">');
 if (_ad_type1 < 0) { //html 타입인경우
-  document.writeln('    <iframe src="'+ _ad_url1 +'" style="left: 0; position: relative; top: 0; border: 0; width: auto; height: auto; touch-action:none;" allowtransparency="true" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>');
+  document.writeln('    <iframe src="'+ _ad_url1 +'" style="left: 0; position: relative; top: 0; border: 0; width: auto; height:'+ _ad_height1 +'; touch-action:none;" allowtransparency="true" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>');
 } else { // js 타입인 경우
   document.writeln('    <scri'+'pt type="text/javascript" src="'+ _ad_url1 +'"></scri'+'pt>'); // 이 부분에 광고 스크립트 들어가야 함 **** src에 광고 url 변경 필요 ****
 }
