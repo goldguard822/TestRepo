@@ -10,6 +10,7 @@ document.writeln('</div>');
 var _ad_url1 = "//adv.imadrep.co.kr/7826_01.html";
 var _ad_type1 = _ad_url1.search(".js");
 var _ad_height1 = "250px";
+var _ad_width1 = ""
 document.writeln('<div role="ad_area" style="position: fixed; top: 100%; right: 0; left: 0; bottom: 50px; background-color:rgba(0,0,0,0.4); z-index:99; touch-action:none; overflow:hidden;">');
 document.writeln('  <span role="slide_close" style="float:left; display:inline-block; width:100%; height:20px; background: rgba(0,0,0,0.4) url(images/btnO_arrow_down.gif) no-repeat center center; background-size: 20px 20px;"></span>');
 document.writeln('  <span role="slide_close" style="float:left; display:inline-block; width:100%; height:20px; background-color:transparent; touch-action:none;"></span>');
@@ -24,11 +25,14 @@ document.writeln('</div>');
 /* 스와이프 광고 노출 영역 E */
 
 /* 하단 광고 S */
-var _ad_url2 = "//tm.interworksmedia.co.kr/ads.js/4B006C06";
-//var _ad_url2 = "//adv.imadrep.co.kr/7826_02.html";
-document.writeln('<div style="position: fixed; bottom: 0;width: 100%;">');
-document.writeln('  <scri'+'pt type="text/javascript" src="'+ _ad_url2 +'"></scri'+'pt>'); // 이 부분에 광고 스크립트 들어가야 함 **** src에 광고 url 변경 필요 ****
-document.writeln('</div>');
+document.ready(function(){
+  var _ad_url2 = "//tm.interworksmedia.co.kr/ads.js/4B006C06";
+  //var _ad_url2 = "//adv.imadrep.co.kr/7826_02.html";
+  document.writeln('<div style="position: fixed; bottom: 0;width: 100%;">');
+  document.writeln('  <scri'+'pt type="text/javascript" src="'+ _ad_url2 +'"></scri'+'pt>'); // 이 부분에 광고 스크립트 들어가야 함 **** src에 광고 url 변경 필요 ****
+  document.writeln('</div>');
+});
+
 /* 하단 광고 E */
 
 (function (factory) {
