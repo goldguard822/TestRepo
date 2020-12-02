@@ -27,10 +27,11 @@ document.writeln('</div>');
 /* 하단 광고 S */
 var _ad_url2 = "//tm.interworksmedia.co.kr/ads.js/4B006C06";
 //var _ad_url2 = "//adv.imadrep.co.kr/7826_02.html";
-
+/*
 document.writeln('<div name="ad_bottom1" style="position: fixed; bottom: 0;width: 100%;">');
 document.writeln('  <scri'+'pt type="text/javascript" src="'+ _ad_url2 +'"></scri'+'pt>'); // 이 부분에 광고 스크립트 들어가야 함 **** src에 광고 url 변경 필요 ****
 document.writeln('</div>');
+*/
 /*
 setTimeout(function(){
   var _ad_bottom1_area = $("div[name='ad_bottom1']")[0];
