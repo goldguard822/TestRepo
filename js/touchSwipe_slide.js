@@ -20,7 +20,7 @@ if (_ad_type1 < 0) { //html 타입인경우
   document.writeln('  <div style="position: absolute; top: calc(50% + 10px); left: 50%; width:95%; transform: translate(-50%, calc(-50% + 10px)); background-color:rgba(255,255,255,0);">');
   document.writeln('    <iframe src="'+ _ad_url1 +'" name="ad_iframe1" style="left: 0; position: relative; top: 0; border: 0; width:'+ _ad_width1 +'; height:'+ _ad_height1 +'; touch-action:none; background-color:#fff;" allowtransparency="true" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="yes" allowfullscreen="true"></iframe>');
 } else { // js 타입인 경우
-  document.writeln('  <div style="position: absolute; top: calc(50% + 10px); left: 50%; width:95%; transform: translate(-50%, calc(-50% + 10px)); background-color:rgba(255,255,255,0);">');
+  document.writeln('  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">');
   document.writeln('    <scri'+'pt type="text/javascript" src="'+ _ad_url1 +'"></scri'+'pt>'); // 이 부분에 광고 스크립트 들어가야 함 **** src에 광고 url 변경 필요 ****
 }
 document.writeln('  </div>');
